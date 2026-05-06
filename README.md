@@ -2,7 +2,7 @@
 
 An interactive web-based tribute to the classic 1970s electronic memory game. Challenge your brain by repeating randomized sequences of lights and sounds that get progressively faster and more complex.
 
-## 🚀 [Play the Live Demo](https://sanjana3026.github.io/Simon-Game/)
+## 🚀 [Play the Live Demo](https://sanjana3026.github.io/Simon-Memory-Game/)
 
 ---
 
