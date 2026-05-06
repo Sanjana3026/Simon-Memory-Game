@@ -17,6 +17,13 @@ body {
   text-shadow: 2px 2px #000, 0 0 5px rgba(254, 242, 191, 0.5); 
   margin-bottom: 40px;
   line-height: 1.5;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#level-title:hover {
+    transform: scale(1.05);
+    color: #fff;
 }
 
 .container {
@@ -37,6 +44,7 @@ body {
   width: 200px;
   border-radius: 20%;
   border: 3px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
 }
 
 body.game-over {
@@ -74,8 +82,8 @@ body.game-over {
 }
 
 .btn:hover {
-  transform: translateY(-4px);
-  filter: brightness(1.1);
+  filter: brightness(1.2);
+  transform: scale(1.02);
 }
 
 @keyframes flash {
