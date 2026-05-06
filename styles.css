@@ -1,20 +1,33 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  background: radial-gradient(circle at center, #022a55 0%, #011F3F 100%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
+ font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
   color: #FEF2BF;
+  text-shadow: 2px 2px #000, 0 0 5px rgba(254, 242, 191, 0.5); 
+  margin-bottom: 40px;
+  line-height: 1.5;
 }
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.row {
+  display: flex;
+  gap: 20px;
 }
 
 .btn {
@@ -22,32 +35,50 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
   border-radius: 20%;
+  border: 3px solid rgba(255, 255, 255, 0.1);
 }
 
-.game-over {
-  background-color: red;
+body.game-over {
+  background: #7f0000 !important;
   opacity: 0.8;
+  animation: flash 0.2s infinite;
 }
 
 .red {
-  background-color: red;
+    background-color: red; 
+    box-shadow: 0 0 15px #e74c3c;
 }
 
 .green {
-  background-color: green;
+  background-color: green; 
+  box-shadow: 0 0 15px #2ecc71;
+  
 }
 
 .blue {
-  background-color: blue;
+  background-color: blue; 
+  box-shadow: 0 0 15px #3498db;
 }
 
 .yellow {
-  background-color: yellow;
+   background-color: yellow; 
+   box-shadow: 0 0 15px #f1c40f;
 }
 
 .pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+  transform: scale(0.95);
+  box-shadow: 0 0 50px white;
+  filter: brightness(1.5);
+  background-color: white !important;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.1);
+}
+
+@keyframes flash {
+  from { background-color: #7f0000; }
+  to { background-color: #ff0000; }
 }
